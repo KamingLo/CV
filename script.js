@@ -1,21 +1,36 @@
 // Mobile menu toggle
-const menuToggle = document.createElement("div");
-menuToggle.classList.add("menu-toggle");
-menuToggle.innerHTML = '<i class="bx bx-menu"></i>';
-document.querySelector("header").appendChild(menuToggle);
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.querySelector(".navbar");
+  const menuBtn = document.querySelector(".menu-btn");
+  const navLinks = document.querySelectorAll('.navbar a');
 
-const navbar = document.querySelector(".navbar");
+  menuBtn.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+    const icon = menuBtn.querySelector("i");
+    icon.classList.toggle("bx-menu");
+    icon.classList.toggle("bx-x");
+  });
 
-menuToggle.addEventListener("click", () => {
-  navbar.classList.toggle("active");
-  const icon = menuToggle.querySelector("i");
-  icon.classList.toggle("bx-menu");
-  icon.classList.toggle("bx-x");
+  // Close menu when clicking a link
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navbar.classList.remove('active');
+      const icon = menuBtn.querySelector('i');
+      icon.classList.remove('bx-x');
+      icon.classList.add('bx-menu');
+    });
+  });
+
+  // Close menu when scrolling
+  window.addEventListener('scroll', () => {
+    if (navbar.classList.contains('active')) {
+      navbar.classList.remove('active');
+      const icon = menuBtn.querySelector('i');
+      icon.classList.remove('bx-x');
+      icon.classList.add('bx-menu');
+    }
+  });
 });
-
-// Scroll spy (highlight active link)
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".navbar a");
 
 window.addEventListener("scroll", () => {
   let current = "";
