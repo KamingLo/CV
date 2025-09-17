@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaming Lo | Web Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="#home" class="logo">Kaming</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#skills">Skills</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Hi, it's <span>Kaming</span></h1>
+                <h3>I am <span>Web Developer</span></h3>
+                <p class="limited-text">
+                    Passionate about building modern, responsive web applications that
+                    deliver real value. Skilled in fullstack development and always ready
+                    to take on new challenges.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-primary">Hire Me</a>
+                    <a href="assets/Kaming-CV.pdf" class="btn-secondary" target="_blank">My CV</a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                Hi! I'm <strong>Kaming</strong>, a passionate fullstack developer with experience in both web and mobile application development.
+                I have worked on multiple projects using modern technologies such as React, Next.js, Express.js, Flutter, and MongoDB.
+                </p>
+                <p>
+                I am currently pursuing a degree in <strong>Informatics Technology at Tarumanagara University</strong>, specializing in web and mobile development.
+                During my studies, I have focused on building scalable applications, designing responsive interfaces, and managing databases efficiently.
+                </p>
+            </div>
+
+            <!-- Baris bawah: Skills -->
+            <div class="about-row">
+                <div class="about-card">
+                <i class="bx bx-server"></i>
+                <h3>Back-end Engineer</h3>
+                <p>Node.js, Express.js, API development, server-side logic.</p>
+                </div>
+
+                <div class="about-card">
+                <i class="bx bx-laptop"></i>
+                <h3>Front-end Engineer</h3>
+                <p>React, Next.js, Flutter, responsive UI, modern web apps.</p>
+                </div>
+
+                <div class="about-card">
+                <i class="bx bxl-postgresql"></i>
+                <h3>Database Administrator</h3>
+                <p>MongoDB, MySQL, database design, optimization, and management.</p>
+                </div>
+                
+                <div class="about-card">
+                <i class="bx bxl-figma"></i>
+                <h3>UI/UX & Mobile engineer</h3>
+                <p>Figma, Canva, Flutter, React Native, and Android Studio</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="assets/Mahkota-regency.webp" alt="Project 1" />
+                <h3>Mahkota Regency</h3>
+                <p>Mahkota Hospital & Regency Hospital, Built on laravel and PostgreSQL</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/Nerovel.webp" alt="Project 3" />
+                <h3>Music Downloader</h3>
+                <p>Modern Music downloader, interactive and UX Friendly Design, Built using Next.js</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/Wepelita.webp" alt="Project 2" />
+                <h3>SMK PELITA IV Profile Website</h3>
+                <p>Responsive school profile with modular Laravel Blade components and Tailwind CSS design.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/iClick.webp" alt="Project 3" />
+                <h3>Clicker Counter website & Realtime database</h3>
+                <p>Clicker Counter that will save point to the database, built using Express.js and mongoDB</p>
+            </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-slider">
+            <div class="slide-track">
+            <i class="bx bxl-react" title="React"></i>
+            <i class="bx bxl-tailwind-css" title="Tailwind CSS"></i>
+            <i class="bx bxl-php" title="Php"></i>
+            <i class="bx bxl-java" title="Java"></i>
+            <i class="bx bxl-python" title="python"></i>
+            <i class="bx bxl-nodejs" title="Node.js/Express"></i>
+            <i class="bx bxl-mongodb" title="MongoDB"></i>
+            <i class="bx bxl-postgresql" title="PostgreSql"></i>
+            <i class="bx bxl-git" title="Git"></i>
+
+            <i class="bx bxl-react"></i>
+            <i class="bx bxl-tailwind-css"></i>
+            <i class="bx bxl-php"></i>
+            <i class="bx bxl-java"></i>
+            <i class="bx bxl-python"></i>
+            <i class="bx bxl-nodejs"></i>
+            <i class="bx bxl-mongodb"></i>
+            <i class="bx bxl-postgresql"></i>
+            <i class="bx bxl-git"></i>
+            </div>
+        </div>
+</section>
+
+    </main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- LEFT -->
+    <div class="footer-left">
+      <a href="#home" class="footer-logo">Kaming</a>
+      <p>&copy;2025 Kaming. All rights reserved.</p>
+    </div>
+
+    <!-- CENTER NAV -->
+    <div class="footer-center">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#skills">Skills</a>
+    </div>
+
+    <!-- RIGHT SOCIAL -->
+    <div class="footer-right">
+      <a href="https://github.com/username" target="_blank"><i class="bx bxl-github"></i></a>
+      <a href="https://instagram.com/username" target="_blank"><i class="bx bxl-instagram"></i></a>
+      <a href="https://linkedin.com/in/username" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://wa.me/1234567890" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
