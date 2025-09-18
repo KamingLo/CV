@@ -390,6 +390,15 @@ footer.footer {
   color: #00bcd4; /* accent */
 }
 
+.footer-left a{
+  color: #007bff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+  .footer-left a:hover{
+  color:#9bcbff;
+}
+
 .footer-left .footer-copy {
   margin-top: 8px;
   font-size: 13px;
