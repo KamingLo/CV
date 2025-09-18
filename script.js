@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     icon.classList.toggle("bx-x");
   });
 
-  // Close menu when clicking a link
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       navbar.classList.remove('active');

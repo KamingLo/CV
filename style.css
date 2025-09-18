@@ -585,7 +585,6 @@ footer.footer {
   }
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
   .navbar {
     position: absolute;
@@ -597,14 +596,18 @@ footer.footer {
     gap: 16px;
     padding: 16px;
     border-radius: 10px;
-    display: none; /* Hidden by default */
+
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
   .navbar.active {
-    display: flex; /* Show when toggled */
+    display: flex;
   }
 
-  .menu-toggle {
+  .menu-btn {
     display: block;
   }
 }
